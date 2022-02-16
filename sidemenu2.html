@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+<title>Side menu by Liliya</title>
+<style>
+
+    body {
+
+        margin: 0px;
+        font-family: sans-serif;
+    }
+    .menu {
+        background-color: #0471A6;
+        height: 100%;
+        position: absolute;
+    }
+
+    .menuitem {
+        position: relative;
+        display: block;
+        width: 50px;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        font-size: smaller;
+        cursor: pointer;
+    }
+
+    .menuitem:hover {
+        background-color: #02557e;
+        border-radius: 15px;
+        position: relative;
+    }
+
+    .dropdown{
+        background-color: #02557e;
+        width: 100px;
+        position: absolute;
+        left: 150%;
+        top: 0px;
+        display: none;
+    }
+
+    .menuitem:hover .dropdown {
+        
+        position: relative;
+        display: block;
+        border-radius: 15px;
+    }
+
+    .dropdownitem {
+        white-space: nowrap;
+        padding: 10px;
+    }
+
+    .dropdownitem:hover {
+        background-color: turquoise;
+        border-radius: 15px;
+    }
+
+</style>
+</head>
+
+<body>
+    <div class="menu">
+        <div class="menuitem"> Menu 1
+            <div class="dropdown">
+                <div class="dropdownitem"> Item 1</div>
+                <div class="dropdownitem"> Item 2</div>
+            </div>
+        </div>
+        <div class="menuitem"> Menu 2
+            <div class="dropdown">
+                <div class="dropdownitem"> Item 1</div>
+                <div class="dropdownitem"> Item 2</div>
+            </div>
+        </div>
+        <div class="menuitem"> Menu 3
+            <div class="dropdown">
+                <div class="dropdownitem"> Item 1</div>
+                <div class="dropdownitem"> Item 2</div>
+            </div>
+        </div>
+        <div class="menuopener"></div>
+    </div>
+</body>
