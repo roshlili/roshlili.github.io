@@ -1,6 +1,3 @@
-#l = [5,4,3,2,1]
-# #print(l)
-#print(list(reversed(l)))
 
 def my_reverse(l):
     output = []
