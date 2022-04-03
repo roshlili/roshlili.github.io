@@ -15,8 +15,8 @@ def to_hex(n):
             a = a//16
             output.append(b) #append
         output.reverse()
-    #№if len(output) > 1:
-            #output.pop(0)
+    if len(output) > 1:
+            output.pop(0)
         result = ""
         for x in output:
             if x > 9 and x < 16:
